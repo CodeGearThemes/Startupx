@@ -36,20 +36,20 @@ $wp_customize->add_control( new Startupx_Control_Tabs( $wp_customize, 'startupx_
 		array(
 			'label' 				=> esc_html__( 'Footer credit tabs', 'startupx' ),
 			'section'       		=> 'startupx_footer_section',
-			'controls_general'		=> json_encode( array( '#customize-control-footer_section_layout' ) ),
+			'controls_general'		=> json_encode( array( '#customize-control-startupx_footer_section_layout' ) ),
 			'controls_design'		=> json_encode( array( '#customize-control-startupx_footer_section_heading_color', '#customize-control-startupx_footer_section_text_color', '#customize-control-startupx_footer_section_background' ) ),
 		)
 	)
 );
 
-$wp_customize->add_setting( 'footer_section_layout',
+$wp_customize->add_setting( 'startupx_footer_section_layout',
 	array(
 		'default'           => 'simple',
 		'sanitize_callback' => 'sanitize_key',
 	)
 );
 
-$wp_customize->add_control( new Startupx_Control_RadioImage( $wp_customize, 'footer_section_layout',
+$wp_customize->add_control( new Startupx_Control_RadioImage( $wp_customize, 'startupx_footer_section_layout',
 		array(
 			'label'    => esc_html__( 'Footer layout', 'startupx' ),
 			'section'  => 'startupx_footer_section',
@@ -58,7 +58,7 @@ $wp_customize->add_control( new Startupx_Control_RadioImage( $wp_customize, 'foo
 				'disabled' => array(
 					'label' => esc_html__( 'Disabled', 'startupx' ),
 					'url'   => '%s/assets/admin/src/layout/disabled.svg'
-				),				
+				),
 				'simple' => array(
 					'label' => esc_html__( 'Simple', 'startupx' ),
 					'url'   => '%s/assets/admin/src/layout/footer-simple.svg'
@@ -66,7 +66,7 @@ $wp_customize->add_control( new Startupx_Control_RadioImage( $wp_customize, 'foo
 			)
 		)
 	)
-); 
+);
 
 $wp_customize->add_setting( 'startupx_footer_section_heading_color',
 	array(
@@ -153,7 +153,7 @@ $wp_customize->add_setting('startupx_footer_credits',
 		'sanitize_callback' => 'startupx_sanitize_text',
 		'default'           => sprintf( esc_html__( '%1$1s. Proudly powered by %2$2s', 'startupx' ), '{copyright} {year} {site_title}', '{theme_author}' ),// phpcs:ignore WordPress.WP.I18n.MissingTranslatorsComment
 		'transport' 		=> 'refresh'
-	)       
+	)
 );
 $wp_customize->add_control( 'startupx_footer_credits',
 	array(
@@ -162,7 +162,7 @@ $wp_customize->add_control( 'startupx_footer_credits',
 		'type'        	  => 'textarea',
 		'section'         => 'startupx_footer_credits',
 		'priority'    	  => 10
-	) 
+	)
 );
 
 

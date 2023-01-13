@@ -17,8 +17,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Define Constants
  */
-if ( ! defined( 'STARTUPX_THEME_VERSION' ) ) 
-	define( 'STARTUPX_THEME_VERSION', '1.0.6' );
+if ( ! defined( 'STARTUPX_THEME_VERSION' ) )
+	define( 'STARTUPX_THEME_VERSION', '1.0.61' );
 	define( 'STARTUPX_THEME_DIR', trailingslashit( get_template_directory() ) );
 	define( 'STARTUPX_THEME_URI', trailingslashit( esc_url( get_template_directory_uri() ) ) );
 
@@ -32,7 +32,7 @@ if ( ! function_exists( 'startupx_setup' ) ) :
 	 * as indicating support for post thumbnails.
 	 */
 	function startupx_setup(){
-	
+
 		/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
@@ -41,7 +41,7 @@ if ( ! function_exists( 'startupx_setup' ) ) :
 		*/
 		load_theme_textdomain( 'startupx', get_template_directory() . '/languages' );
 
-		
+
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
@@ -123,7 +123,7 @@ if ( ! function_exists( 'startupx_setup' ) ) :
 					'shortName' => esc_html_x( 'S', 'Font size', 'startupx' ),
 					'size'      => 14,
 					'slug'      => 'small',
-				),				
+				),
 				array(
 					'name'      => esc_html__( 'Normal', 'startupx' ),
 					'shortName' => esc_html_x( 'N', 'Font size', 'startupx' ),
@@ -161,7 +161,7 @@ if ( ! function_exists( 'startupx_setup' ) ) :
 					'slug'      => 'gigantic',
 				),
 			)
-		);		
+		);
 
 		/**
 		 * Responsive embeds

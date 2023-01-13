@@ -5,7 +5,7 @@ Tags: one-column, two-columns, custom-background, custom-logo, custom-menu, edit
 Requires at least: 4.8
 Tested up to: 6.0
 Requires PHP: 7.4
-Stable tag: 1.0.6
+Stable tag: 1.0.61
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -71,6 +71,11 @@ Startupx is distributed under the terms of the GNU GPL
 	Folder vendor/kirki-framework https://github.com/kirki-framework, (C) kirki-framework, [MIT](https://opensource.org/licenses/MIT)
 
 == Changelog ==
+
+= 1.0.61 (Released: Jan. 13, 2023) =
+* Variables prefixed
+* Merge media file with theme files
+* Header and Footer hooks added
 
 = 1.0.6 (Released: Nov. 10, 2022) =
 * Variables prefixed & escaped

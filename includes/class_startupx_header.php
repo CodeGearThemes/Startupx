@@ -8,7 +8,7 @@
 if ( !class_exists( 'Startupx_Header' ) ) :
 
     /**
-	 * Startupx_Header 
+	 * Startupx_Header
 	 */
 
     class Startupx_Header {
@@ -37,7 +37,7 @@ if ( !class_exists( 'Startupx_Header' ) ) :
 		}
 
          public function header_markup() {
-			
+
             //Main header layout
 			$header_layout		= get_theme_mod( 'startupx_main_header_layout', 'default' );
 			get_template_part( 'template-parts/header/layout-header', $header_layout );
@@ -47,7 +47,7 @@ if ( !class_exists( 'Startupx_Header' ) ) :
         /**
 		 * Main navigation
 		*/
-        
+
         public function main_navigation(){?>
             <div class="navigation header--main-navigation align--flex-center">
 				<div id="header-navigation" class="header--desktop-navigation header-navigation">
@@ -60,6 +60,7 @@ if ( !class_exists( 'Startupx_Header' ) ) :
 						<small class="screen-reader-text"><?php esc_html_e( 'Menu', 'startupx' ); ?></small>
 					</button>
 					<nav id="site-navigation" class="main-navigation">
+						<?php do_action('startupx_navigation_before');?>
 						<button class="mobile-menu__toggle hide" aria-controls="primary-menu" aria-expanded="false">
 							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
 								<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
@@ -74,7 +75,8 @@ if ( !class_exists( 'Startupx_Header' ) ) :
 								) );
 							?>
 						</div>
-					</nav><!-- #site-navigation --> 
+						<?php do_action('startupx_navigation_after');?>
+					</nav><!-- #site-navigation -->
 				</div>
 			</div>
         <?php
@@ -112,7 +114,7 @@ if ( !class_exists( 'Startupx_Header' ) ) :
 
     }
 
-    
+
     /**
 	 * Initialize class
 	 */
