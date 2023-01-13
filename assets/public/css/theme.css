@@ -486,7 +486,8 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	padding: 0 0 0 1rem;
+	margin: 0 0 1rem 1rem;
 }
 
 ul {
@@ -702,15 +703,15 @@ body:is(.home) .section-index {
     - Note the inclusion of .grid-uniform to take care of clearfixes on evenly sized grid items
 ==============================================================================*/
 /* Force clearfix on grids */
-.grid, 
-.grid--rev, 
+.grid,
+.grid--rev,
 .grid--full,
 .grid-uniform {
 	*zoom: 1;
 }
 
-.grid:after, 
-.grid--rev:after, 
+.grid:after,
+.grid--rev:after,
 .grid--full:after,
 .grid-uniform:after {
 	content: '';
@@ -733,8 +734,8 @@ body:is(.home) .section-index {
     2. Remove any margins and paddings that might affect the grid system.
     3. Apply a negative `margin-left` to negate the columns' gutters.
 ==============================================================================*/
-.grid, 
-.grid--rev, 
+.grid,
+.grid--rev,
 .grid--full,
 .grid-uniform {
 	display: flex;
@@ -2735,7 +2736,7 @@ h6 {
 	order: 1;
 }
 
-.btn, 
+.btn,
 .btn-primary,
 .read-more,
 .error404 .error-404 .search-form .search-submit {
@@ -2752,7 +2753,7 @@ h6 {
 	letter-spacing: 1px;
 }
 
-.btn:hover, 
+.btn:hover,
 .btn-primary:hover,
 .sidebar-widget .wp-block-search .wp-block-search__button:hover,
 .read-more:hover,
@@ -2763,7 +2764,7 @@ input[type="submit"]:hover,
 	color: var(--theme--button-text-hover-color);
 }
 
-.btn:visited, 
+.btn:visited,
 .btn-primary:visited,
 .sidebar-widget .wp-block-search .wp-block-search__button:visited,
 .article .content-inner .entry-content .read-more:visited{
@@ -2972,7 +2973,7 @@ body:is(.home) .transparent-header{
 	border-radius: 50px;
 }
 
-.article .content-inner .entry-meta .posted-on, 
+.article .content-inner .entry-meta .posted-on,
 .article .content-inner .entry-meta .byline{
 	margin-right: 0px;
 }
@@ -3015,7 +3016,7 @@ body:is(.home) .transparent-header{
     border: 1px solid var(--theme--form-border-color);
 }
 
-.sidebar label, 
+.sidebar label,
 .sidebar h2 {
     font-size: 24px;
     line-height: 1;
@@ -3311,7 +3312,7 @@ body:is(.home) .transparent-header{
     border: none;
 }
 
-.error404 .error-404 .search-form .search-submit, 
+.error404 .error-404 .search-form .search-submit,
 .no-results .search-form .search-submit {
     fill: #fff;
 }
@@ -3356,19 +3357,19 @@ body:is(.home) .transparent-header{
 .site-footer .section-footer{
     padding-top: 30px;
     padding-bottom: 30px;
-} 
+}
 
 .site-footer .section-footer h2,
 .site-footer .section-footer h3,
 .site-footer .section-footer h4,
 .site-footer .section-footer h5,
 .site-footer .section-footer h6{
-    color: var(--theme--footer-heading-color); 
+    color: var(--theme--footer-heading-color);
 	text-transform: var(--theme--heading-font-text);
 }
 
 .site-footer .section-footer a{
-    color: var(--theme--footer-color); 
+    color: var(--theme--footer-color);
 }
 
 /* Block Widgets
